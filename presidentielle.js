@@ -148,4 +148,4 @@ function start() {
   return fetchResults().then(drawGraph);
 }
 
-document.addEventListener("DOMContentLoaded", start);
+window.onload = start;
