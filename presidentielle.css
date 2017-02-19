@@ -1,7 +1,13 @@
+
 .chartContainer {
   width: 80%;
   height: 500px;
   margin: auto;
+  background: radial-gradient(#fff, #eee);
+  border-radius: 20px;
+  box-shadow: 0 0 2px black;
+  margin-bottom: 20px;
+  padding: 5px;
 }
 
 h1{
