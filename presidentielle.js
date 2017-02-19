@@ -14,7 +14,7 @@ const COLORS = {
 
 function splitResults(str) {
   // Retourne à partir d'une chaîne de caractères une liste de résultats de sondages
-  return str.match(/\d+ [a-zé]+ 20\d\d :( - [^:]* : \d+,?\d*%)+/g);
+  return str.match(/\d+ [a-zé]+ 20\d\d :( ?- [^:]* : \d+,?\d*%)+/g);
 }
 
 function parseResults(text) {
@@ -27,7 +27,7 @@ function parseResult(text) {
   // parse une chaîne de caractères qui contient un résultat de sondage.
   const date = text.match(/\d+ [a-zé]+ 20\d\d/)[0];
   const candidates = text
-                  .split(' - ')
+                  .split(/ ?- /)
                   .slice(1)
                   .map(parseSingleCandidate);
 
