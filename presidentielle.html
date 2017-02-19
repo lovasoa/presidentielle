@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Sondages présidentielle 2017</title>
+    <link rel="stylesheet" href="presidentielle.css"/>
+  </head>
+
+<body>
+  <h1>Résultats des sondages IFOP pour la présidentielle 2017</h1>
+  <span id="loading">Chargement...</span>
+  <div class="chartContainer">
+    <canvas id="pieChart" width="1024" height="500"></canvas>
+  </div>
+  <div class="chartContainer">
+    <canvas id="historicChart" width="1024" height="500"></canvas>
+  </div>
+
+<footer>
+  Source des données: <a href="http://www.ifop.fr/?option=com_publication&type=poll&id=3655">IFOP</a>.
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script async src="presidentielle.js"></script>
+</body>
+</html>
